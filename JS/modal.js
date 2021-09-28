@@ -4,9 +4,7 @@ const modal = document.querySelector('.modal');
 
 modalBtns.forEach(moreBtn => {
     moreBtn.addEventListener('click', (event) => {
-        console.log(event.target);
         modal.classList.remove('hidden');
-
     })
 })
 modal.addEventListener('click', (event) => {
