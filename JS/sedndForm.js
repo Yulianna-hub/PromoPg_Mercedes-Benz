@@ -32,13 +32,11 @@
 const formsData = document.querySelectorAll('.form');
 
 formsData.forEach((form) => {
-    console.log(form);
     form.addEventListener('submit', (event) => {   
         let data = {};
         for (let {name, value} of form.elements) {
             if (name) {
                 data[name] = value;
-                console.log(data[name]);
             }
         }
         fetch('https://jsonplaceholder.typicode.com/posts', {
