@@ -13,6 +13,10 @@ for (let btn of tabsHandlerElems) {
                 content.classList.add('hidden');
             }
         })
+        designTitle.forEach(titleoftab => {
+                
+            titleoftab.classList.toggle('hidden');   
+        })
      })
 
 

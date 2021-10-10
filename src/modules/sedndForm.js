@@ -3,7 +3,7 @@
 const sedndFormFunc = () => {
     const formsData = document.querySelectorAll('.form');
 
-    formsData.forEach((form) => {
+    for (let form of formsData) {
         form.addEventListener('submit', (event) => {   
             let data = {};
             for (let {name, value} of form.elements) {
@@ -24,11 +24,11 @@ const sedndFormFunc = () => {
                 console.log("Data saved successfully.");
                 form.reset()
             }).catch(error => {
-                console.log("An error occured, status" + error.message);
+                console.log("An error occured, status " + error.message);
             })
             event.preventDefault();
         })
-    })
+    }
 
 }
 export default sedndFormFunc;
