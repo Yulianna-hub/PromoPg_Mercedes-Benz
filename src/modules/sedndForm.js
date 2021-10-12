@@ -6,7 +6,7 @@ const sedndFormFunc = () => {
     for (let form of formsData) {
         form.addEventListener('submit', (event) => {   
             let data = {};
-            for (let {name, value} of form.elements) {
+            for (let {name, value} of form) {
                 if (name) {
                     data[name] = value;
                 }
@@ -29,6 +29,5 @@ const sedndFormFunc = () => {
             event.preventDefault();
         })
     }
-
 }
 export default sedndFormFunc;

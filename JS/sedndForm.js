@@ -1,5 +1,7 @@
 'use strict';
 const formsData = document.querySelectorAll('.form');
+const sendbuttons = document.querySelectorAll('.send_button');
+
 
 for (let form of formsData) {
     form.addEventListener('submit', (event) => {   
